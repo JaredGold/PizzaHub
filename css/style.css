@@ -118,6 +118,10 @@ button{
     position: fixed;
   }
 
+  .front-page-content{
+    padding: 60px;
+  }
+
   #products-content{
     flex-direction: row;
     justify-content: flex-start;
