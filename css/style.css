@@ -76,6 +76,10 @@ button{
     padding: 10px 10px;
   }
 
+  .front-page-content{
+    padding-top: 150px;
+  }
+
   .top{
     position: fixed;
     width: 100%;
@@ -136,7 +140,6 @@ button{
 #front-page-image{
   height: auto;
   width: 50%;
-  margin-top: 75px;
   border-radius: 30px;
   margin-bottom: 30px;
 }
