@@ -1,0 +1,135 @@
+body {
+  background-color: oldlace;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Comic Sans MS";
+  font-size: 32px;
+}
+
+h4 h3 a {
+  font-family: arial;
+}
+
+a {
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  background-color: #fcdda4;
+  border: 1px solid black;
+  border-radius: 75%;
+}
+
+a:visited {
+  color: black;
+}
+
+button{
+  display: flex;
+  height: 40px;
+  padding: 20px;
+  align-items: center;
+}
+
+.top {
+  background-color: #fadbdb;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.front-page-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    flex-direction: column-reverse;
+  }
+
+  #products-content{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1366px) and (orientation: landscape){
+  nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav>a{
+    text-align: center;
+    font-size: 1.3em;
+    height: 36px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 33px;
+    margin-bottom: 30px;
+  }
+
+  .nav-bar {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+  }
+  
+  .top{
+    width: 100px;
+    height: 100%;
+    position: fixed;
+  }
+
+  #products-content{
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 160px;
+  }
+  .products-tile{
+    width: 30%;
+  }
+
+  h3{
+    font-size: 2.5em;
+  }
+}
+
+#front-page-image{
+  height: auto;
+  width: 50%;
+  margin-top: 75px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+.product-image{
+  width: 200px;
+  border-radius: 30px;
+}
+
+#products-content{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: space-evenly;
+}
+
+.products-tile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
