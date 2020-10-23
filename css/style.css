@@ -107,7 +107,26 @@ button {
   margin-top: 50px;
 }
 
-@media screen and (max-width: 1366px) and (orientation: landscape) {
+#contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2%;
+}
+
+#form-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 4000px) and (orientation: landscape) {
   nav {
     display: flex;
     flex-direction: column;
@@ -162,12 +181,12 @@ button {
     font-size: 2.5em;
   }
 
-  #company-motive{
+  #company-motive {
     margin-top: 50px;
     width: 60%;
   }
 
-  .company-content{
+  .company-content {
     margin-left: 160px;
     flex-direction: column;
     flex-wrap: wrap;
@@ -200,14 +219,20 @@ button {
     width: 100%;
   }
 
-  #company-motive{
+  #company-motive {
     margin-top: 50px;
     width: 80%;
   }
 
-  .company-content{
+  .company-content {
     padding-top: 100px;
     flex-direction: column;
     align-items: center;
+  }
+
+  #contact-form {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
   }
 }
