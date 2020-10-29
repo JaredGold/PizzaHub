@@ -5,8 +5,23 @@ body {
   min-height: 100vh;
 }
 
-main{
-  flex-grow: 1;
+form {
+  background-color: #b8ae9c;
+  padding: 10px 50px;
+  border: 2px solid black;
+}
+
+#contact-form p {
+  background-color: darkgray;
+  padding: 10px;
+  border: 2px solid black;
+  color: #fcfbf8;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 h1 {
@@ -20,7 +35,8 @@ h4 h3 a {
 
 a {
   text-decoration: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px 20px;
   background-color: #fcdda4;
   border: 1px groove black;
@@ -42,10 +58,14 @@ a:visited {
 }
 
 button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 40px;
   padding: 20px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .top {
@@ -53,22 +73,33 @@ button {
 }
 
 .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px;
   border-bottom: 2px solid black;
 }
 
 .front-page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-left: 100px;
   padding-top: 80px;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-
 
 #front-page-image {
   height: auto;
@@ -77,15 +108,17 @@ button {
   margin-bottom: 30px;
 }
 
-
-
-.products-tile>h4 {
+.products-tile > h4 {
   margin-top: 30px;
 }
 
 .company-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #fun-pizza {
@@ -100,31 +133,59 @@ button {
 }
 
 #products-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   /* padding: 50px; */
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .products-tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 50px;
 }
 
 #contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 2%;
 }
 
 #form-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 button {
@@ -134,111 +195,141 @@ button {
 
 @media screen and (max-width: 4000px) and (orientation: landscape) {
   nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
-  nav>a {
+  nav > a {
     text-align: center;
     font-size: 1.3em;
     height: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100px;
     padding: 33px;
     margin-bottom: 30px;
   }
-
   .nav-bar {
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    flex-direction: column;
-
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   .top {
     width: 100px;
     height: 100%;
     position: fixed;
   }
-
   .front-page-content {
     padding-top: 50px;
   }
-
   #front-page-image {
     width: 40%;
   }
-
   #products-content {
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-left: 160px;
   }
-
   .products-tile {
     width: 30%;
   }
-
   h3 {
     font-size: 2.5em;
   }
-
   #company-motive {
     margin-top: 50px;
     width: 60%;
   }
-
   .company-content {
     margin-left: 160px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 @media screen and (max-width: 700px) {
   .nav-bar {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0;
     padding-bottom: 30px;
   }
-
   #products-content {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-top: 100px;
   }
-
   a {
     padding: 10px 10px;
   }
-
   .front-page-content {
     padding-top: 150px;
   }
-
   .top {
     position: fixed;
     width: 100%;
   }
-
   #company-motive {
     margin-top: 50px;
     width: 80%;
   }
-
   .company-content {
     padding-top: 100px;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   #contact-form {
     padding-top: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
+/*# sourceMappingURL=style.css.map */
