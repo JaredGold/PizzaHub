@@ -1,4 +1,4 @@
-@mixin vertical-flexbox{
+@mixin vertical-flexbox {
   display: flex;
   flex-direction: column;
 }
@@ -10,23 +10,23 @@ body {
   min-height: 100vh;
 }
 
-form{
+form {
   background-color: #b8ae9c;
   padding: 10px 50px;
   border: 2px solid black;
 }
 
 
-#contact-form{
- p{
-   background-color: darkgray;
-   padding: 10px;
-   border: 2px solid black;
-   color: #fcfbf8;
- } 
+#contact-form {
+  p {
+    background-color: darkgray;
+    padding: 10px;
+    border: 2px solid black;
+    color: #fcfbf8;
+  }
 }
 
-main{
+main {
   flex-grow: 1;
 }
 
